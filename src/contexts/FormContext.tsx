@@ -3,7 +3,7 @@ import { createContext, ReactNode, useContext, useReducer } from "react";
 type State = {
     currentStep: number;
     name: string;
-    level: 0 | 1
+    level: 0 | 1 | 2 | 3 
     nickNameInGame: {
         game: string,
         nickName: string
