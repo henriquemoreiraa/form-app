@@ -4,10 +4,8 @@ type State = {
     currentStep: number;
     name: string;
     level: 0 | 1 | 2 | 3 
-    nickNameInGame: {
-        game: string,
-        nickName: string
-    }
+    game: string,
+    nickName: string
 }
 type Action = {
     type: FormActions;
@@ -25,10 +23,9 @@ const initialData: State = {
     currentStep: 0,
     name: '',
     level: 0,
-    nickNameInGame: {
-        game: '',
-        nickName: ''
-    }
+    game: '',
+    nickName: ''
+
 }
 
 const FormContext = createContext<ContextType | undefined>(undefined);
@@ -37,7 +34,8 @@ export enum FormActions {
     setCurrentStep,
     setName,
     setLevel,
-    setNickName,
+    setGame,
+    setNickname
 }
 
 const formReducer = (state: State, action: Action) => {
@@ -48,8 +46,10 @@ const formReducer = (state: State, action: Action) => {
             return {...state, name: action.payload}
         case FormActions.setLevel:
             return {...state, level: action.payload}
-        case FormActions.setNickName:
-            return {...state, nickNameInGame: action.payload}
+        case FormActions.setGame:
+            return {...state, game: action.payload}
+        case FormActions.setNickname:
+            return {...state, nickName: action.payload}
         default:
             return state
     } 

@@ -19,7 +19,7 @@ export const FormStep1 = () => {
         if (state.name !== '') {
             history('/step2')
         } else {
-            alert('Type your nickname!')
+            alert('Answer the questions!')
         }
     }
 
@@ -34,12 +34,12 @@ export const FormStep1 = () => {
         <Theme>
             <C.Container>
                 <p>Step 1/3 </p>
-                <h1>Which was your best nickname ever?</h1>
+                <h1>What is your name?</h1>
                 
                 <hr />
 
                 <label>
-                    Your nickname
+                    Your name
                     <input 
                         type="text" 
                         autoFocus

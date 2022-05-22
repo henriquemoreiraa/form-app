@@ -25,7 +25,7 @@ export const FormStep2 = () => {
         if (state.name !== '') {
             history('/step3')
         } else {
-            alert('Type your nickname!')
+            alert('Answer the questions!')
         }
     }
 
