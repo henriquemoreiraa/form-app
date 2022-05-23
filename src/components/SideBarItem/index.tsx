@@ -2,7 +2,8 @@ import * as C from "./styles"
 import { Link } from 'react-router-dom'
 import { ReactComponent as ProfileIcon } from '../../svgs/profile.svg'
 import { ReactComponent as BookIcon } from '../../svgs/book.svg'
-import { ReactComponent as mailIcon } from '../../svgs/mail.svg'
+import { ReactComponent as MailIcon } from '../../svgs/mail.svg'
+import { ReactComponent as CheckIcon } from '../../svgs/check-circle.svg'
 
 type Props = {
     title: string;
@@ -28,10 +29,10 @@ export const SideBarItem = ({title, description, icon, path, active}: Props) => 
                         <BookIcon fill="white" width={24} height={24}/>
                     }
                     {icon === 'contacts' &&
-                        <ProfileIcon fill="white" width={24} height={24}/>
+                        <MailIcon fill="white" width={24} height={24}/>
                     }
                     {icon === 'results' &&
-                        <BookIcon fill="white" width={24} height={24}/>
+                        <CheckIcon  width={24} height={24}/>
                     }
 
                 </C.IconArea>

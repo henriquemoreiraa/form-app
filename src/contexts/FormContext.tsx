@@ -1,15 +1,11 @@
 import { createContext, ReactNode, useContext, useReducer } from "react";
-// type GameNick = [{
-//     game: string;
-//     nickName: string
-// }]
+
 type State = {
     currentStep: number;
     name: string;
     level: 0 | 1 | 2 | 3 
     game: string;
     nickName: string;
-    // GameNick: GameNick
 }
 type Action = {
     type: FormActions;
@@ -28,8 +24,7 @@ const initialData: State = {
     name: '',
     level: 0,
     game: '',
-    nickName: ''
-
+    nickName: '',
 }
 
 const FormContext = createContext<ContextType | undefined>(undefined);
@@ -39,7 +34,7 @@ export enum FormActions {
     setName,
     setLevel,
     setGame,
-    setNickname
+    setNickname,
 }
 
 const formReducer = (state: State, action: Action) => {

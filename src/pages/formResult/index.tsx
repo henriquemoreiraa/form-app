@@ -29,7 +29,7 @@ export const FormStep4 = () => {
                 <h1>Research results </h1>
                 
                 <hr />
-
+                
                 <p>Your name: <span className="green">{state.name}</span></p>
 
                 <span>
