@@ -37,7 +37,14 @@ export const Theme = ({ children }: Props) => {
                         path='/step3'
                         active={state.currentStep === 3}
                     />
-                    
+                    <SideBarItem 
+                        title='Results'
+                        description='Your results'
+                        icon='results'
+                        path='/result'
+                        active={state.currentStep === 4}
+                    />
+
                 </C.Sidebar>
                 <C.Page>
                     {children}

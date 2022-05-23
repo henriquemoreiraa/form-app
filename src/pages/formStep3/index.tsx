@@ -21,8 +21,7 @@ export const FormStep3 = () => {
     
     const handleNextStep = () => {
         if (state.name !== '' && state.game !== '' && state.nickName !== '') {
-            // history('/')
-            console.log(state)
+            history('/result')
         } else {
             alert('Answer the questions!')
         }
