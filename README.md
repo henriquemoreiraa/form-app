@@ -1,4 +1,4 @@
-🔤 Form app
+📋 Form app
 =========================
 
 Form app, using React, React Routers, typescript and Styled Components
