@@ -1,7 +1,7 @@
 🔤 Form app
 =========================
 
-Form app, using React, React Routers and Styled Components
+Form app, using React, React Routers, typescript and Styled Components
 ---------------------------
 
 ### How it works: 
